@@ -1,0 +1,74 @@
+/* header  #42AAC4 
+paragraph white
+لو عندنا اي button هيكون الـ border بتاعه والكتابه اللي جواه باللون
+#42AAC4 
+والـ background بتاعته بالأسود.
+والـ background بتاعته بالأسود. */
+.font-bg{
+    Font-Family: "Roboto", "Helvetica", "Arial", sans-serif;
+    background-color:#000;
+    height: 10000px;
+}
+/* Scroll up button */
+
+#myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: #000; 
+    color: #42AAC4 ; 
+    cursor: pointer; 
+    padding: 10px;
+    border-radius: 50%;
+    /* font-size: 10px; */
+    transition: .5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #999; 
+    color: #fff;
+  }
+
+  /* End Scroll up button */
+
+  /* Sources */
+  .sources{
+      margin: 50px;
+  }
+  .sources .card{
+      background-color: #000;
+      border: none;
+  }
+  .sources h2{
+      padding: 30px;
+  }
+  .sources h2, .sources .card h5{
+      color:#42AAC4;
+      font-weight: bold;
+  }
+  .sources .card h5{
+      font-size: 18px;
+  }
+  .sources .card .card-text{
+      color: #fff;
+  }
+  .sources .card .links{
+    color:#42AAC4;
+    background-color: #000;
+    color: #42AAC4 ; 
+    cursor: pointer; 
+    transition: .5s;
+  }
+  .sources .card .links:hover{
+    background-color: #999; 
+    color: #fff;
+  }
+ 
+  #slider a.carousel-control-prev, #slider a.carousel-control-next{
+      width: 2%;
+      padding-top: 20px;
+  }
+  /* End Of Sources */
