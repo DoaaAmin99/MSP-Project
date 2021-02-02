@@ -1,0 +1,105 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-Family: "Roboto", "Helvetica", "Arial", sans-serif;
+    
+    }
+    body{
+        background-color: #000;
+    }
+    
+
+
+.clear { clear: both;}
+.header{
+    background: none;
+    height: 200px;
+    
+}
+header .navbar{
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 0%;
+}
+.navbar .navitems {
+    padding-left: 123px;
+}
+
+
+.section-header { text-align: center;
+                   margin-bottom: 20px;
+                   color: #6195ff;
+                   margin-top: 100px;
+                   
+                }
+                   
+.library-item {    float: right;
+                   width: 32%;
+                   margin-bottom:25px;
+                   position: relative;
+                   padding: 20px
+                  }
+                   
+ .library-item .layer { position: absolute;
+                          top: 0;
+                          left:0;
+                          width: 100%;
+                          height: 100%;
+                          background-color:rgba(0,0,0,.5);
+                          opacity: 0;
+                          visibility: hidden;
+                          transition: opacity .5s; }
+                          
+  .library-item:hover .layer { opacity:1;
+                               visibility: visible;}
+                                  
+  
+ .library-item img { width: 100%; height:300px;}
+ /* .library-item.mg { margin: 0 2%} */
+ .layer .layer-info{ position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%,-50%);
+                     width: 80%;
+                     text-align: center;}
+.library-item p {
+    color: #fff;
+}
+
+.layer .layer-info .layer-h {   font-size: 20px;
+                                color: #fff;
+                                margin-bottom: 10px;
+                                position: relative;
+                                top: 10px;
+                                transition: top .5s, opacity .5s;
+                               transition-delay: 0.3s;
+                                opacity: 0; }
+                                
+    .layer .cate {  color: #6195ff;
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    position: relative;
+                    top: 10px;
+                    transition: top .5s, opacity .5s;
+                    transition-delay: .2s;
+                     opacity: 0;}
+             
+.layer a {  color: #fff;
+            position: relative;
+            top: 10px;
+            transition: top .5s, opacity .5s;
+            transition-delay: .3s;
+            opacity: 0;}
+
+.layer a i { display: inline-block;
+           background-color: #6195ff;
+           width: 40px;
+           height: 40px;
+           line-height: 40px; }
+
+.library-item:hover .layer-h,
+.library-item:hover .layer .layer-info .cate,
+.library-item:hover .layer .layer-info a { top: 0;
+                                          opacity: 1;}
+ 
