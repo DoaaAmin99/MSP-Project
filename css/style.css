@@ -7,7 +7,7 @@ paragraph white
 .font-bg{
     Font-Family: "Roboto", "Helvetica", "Arial", sans-serif;
     background-color:#000;
-    height: 10000px;
+    box-sizing: border-box;
 }
 /* Scroll up button */
 
@@ -23,24 +23,165 @@ paragraph white
     cursor: pointer; 
     padding: 10px;
     border-radius: 50%;
-    /* font-size: 10px; */
     transition: .5s;
   }
   
   #myBtn:hover {
-    background-color: #999; 
+    background-color: #42AAC4; 
     color: #fff;
   }
 
   /* End Scroll up button */
 
+  /*start header */
+.header{
+  height: 650px;
+  background-image: url(../images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  
+}
+.header h2{
+  color: #fff;
+  display: inline-block;
+  margin: 13px 0px 0px 30px;
+  font-size: 40px;
+
+}
+.clr{
+  color:  #42AAC4 ;
+}
+.header .login-btn ,.header .signup-btn{
+  float: right;
+  margin: 25px 0px 0px 10px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  outline: none;
+  border-width:0px;
+  cursor: pointer; 
+  transition: .5s;
+}
+.signup-btn{
+  background-color:#42AAC4;
+  color: white;
+}
+.signup-btn:hover{
+  background-color:#000;
+}
+.login-btn:hover{
+  background:#42AAC4;
+  color: #fff;
+}
+/* start nav */
+header .navbar{
+  background-color:#252F31;
+  margin-top: 4%;
+  width: 60%;
+  margin-left: 18%;
+  border-radius: 50px ;
+}
+.header .logo, .navbar .navitems a{
+  color:  #42AAC4 !important;
+  font-size: 18px;
+  padding: 10px;
+}
+.header .logo:hover, .navbar .navitems a:hover{
+  color: #fff !important;
+}
+.navbar .navitems{
+  padding-left: 45px;
+}
+
+/* End nav */
+
+/* page title */
+
+.header .page_title{
+  text-align: center;
+  color: #FFF;
+  margin: 100px;
+}
+.header .name{
+  color: #fff;
+  font-size: 4em;
+  margin-bottom: 45px;
+}
+.header .page_title input{
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  outline: none;
+  height: 35px;
+  background-color: #444444;
+  border-color: #42AAC4;
+}
+.fa-search:hover{
+  color: #42AAC4;
+}
+.fa-search{
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+/*End page title */
+
+/* End header */
+
+/* Start about-us  */
+.about-us{
+  margin-bottom: 12%;
+  background-color: #000;
+  margin: 100px;
+}
+
+.about-us .about-pic img{
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-right: 80px;
+}
+.description, .get-in-touch .our-form h2{
+  color: #42AAC4;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  
+}
+.description p{
+  font-size: 18px;
+  color: #999;
+  
+}
+.description button, .get-in-touch form button{
+    color:#42AAC4;
+    background-color: #000; 
+    border-radius: 10px;
+    border: 1px solid #42AAC4;
+    padding: 10px;
+    cursor: pointer; 
+    transition: .5s;
+}
+.description button:hover, .get-in-touch form button:hover{
+    background-color:#42AAC4; 
+    color: #fff;
+    
+}
+.description{
+  padding: 0px 10px 10px 157px;
+}
+/* End about-us */
+
   /* Sources */
-  .sources{
-      margin: 50px;
+  .sources, .get-in-touch{
+      margin: 100px;
   }
   .sources .card{
       background-color: #000;
       border: none;
+      transition: all .4s;
+  }
+  .sources .card:hover{
+    box-shadow: 2px 3px 15px #999;
+    transform: translateY(-1px);
   }
   .sources h2{
       padding: 30px;
@@ -63,7 +204,7 @@ paragraph white
     transition: .5s;
   }
   .sources .card .links:hover{
-    background-color: #999; 
+    background-color:#42AAC4; 
     color: #fff;
   }
  
@@ -72,3 +213,69 @@ paragraph white
       padding-top: 20px;
   }
   /* End Of Sources */
+  /* start get-in-touch */
+  .get-in-touch .our-form{
+    padding: 20px 0;
+    border-radius: 5px;
+  }
+
+  .get-in-touch .our-form input,
+  .get-in-touch .our-form textarea{
+    margin: 10px;
+    border: 1px solid #42AAC4;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    width: 46%;
+    background-color: #444444;
+  }
+  .get-in-touch .our-form textarea{
+    width: 96%;
+    height:200px;
+  }
+  .get-in-touch form button{
+    width: 96%;
+    padding: 15px;
+    margin: 10px;
+  }
+  /* End get-in-touch */
+
+  /* Start footer */
+  .footer{
+    margin-top: 100px;
+    height: 300px;
+    padding: 40px 0 10px 0;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #0c2754 0%, #a26992 100%);
+    color: #fff;
+}
+.footer .links a, .footer .github-link a{
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+.footer .github-link a{
+  margin-top: 50px;
+}
+.footer .links a:hover, .footer .github-link a:hover{
+  color: #42AAC4;
+  border: 1px solid #42AAC4;
+}
+.footer .follow-us{
+  margin-top: 6%;
+  margin-left: 50%;
+  
+  font-size: 30px;
+  
+   cursor: pointer;
+}
+.footer .follow-us i{
+  margin: 5px;
+  transition: .5s ease; 
+}
+.footer .follow-us i:hover{
+  color: #42AAC4;
+}
+  /* End footer */
