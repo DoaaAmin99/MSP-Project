@@ -1,9 +1,3 @@
-/* header  #42AAC4 
-paragraph white
-لو عندنا اي button هيكون الـ border بتاعه والكتابه اللي جواه باللون
-#42AAC4 
-والـ background بتاعته بالأسود.
-والـ background بتاعته بالأسود. */
 .font-bg{
     Font-Family: "Roboto", "Helvetica", "Arial", sans-serif;
     background-color:#000;
@@ -135,9 +129,8 @@ header .navbar{
   margin: 100px;
 }
 
-.about-us .about-pic img{
+.about-us .about-pic img, .get-in-touch-pic img{
   border-radius: 10px;
-  margin-right: 50px;
   margin-right: 80px;
 }
 .description, .get-in-touch .our-form h2{
@@ -202,6 +195,7 @@ header .navbar{
     color: #42AAC4 ; 
     cursor: pointer; 
     transition: .5s;
+    border-radius: 10px;
   }
   .sources .card .links:hover{
     background-color:#42AAC4; 
@@ -237,6 +231,10 @@ header .navbar{
     width: 96%;
     padding: 15px;
     margin: 10px;
+  }
+  .get-in-touch-pic img{
+    margin-top: 45px;
+    width: 600px;
   }
   /* End get-in-touch */
 
