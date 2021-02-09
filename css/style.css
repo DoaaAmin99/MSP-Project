@@ -124,12 +124,11 @@ header .navbar{
 
 /* Start about-us  */
 .about-us{
-  margin-bottom: 12%;
   background-color: #000;
-  margin: 100px;
+  margin: 100px 0px;
 }
 
-.about-us .about-pic img, .get-in-touch-pic img{
+.about-us .about-pic img{
   border-radius: 10px;
   margin-right: 80px;
 }
@@ -165,7 +164,7 @@ header .navbar{
 
   /* Sources */
   .sources, .get-in-touch{
-      margin: 100px;
+      margin: 100px 0px;
   }
   .sources .card{
       background-color: #000;
@@ -235,6 +234,7 @@ header .navbar{
   .get-in-touch-pic img{
     margin-top: 45px;
     width: 600px;
+    border-radius: 10px;
   }
   /* End get-in-touch */
 
